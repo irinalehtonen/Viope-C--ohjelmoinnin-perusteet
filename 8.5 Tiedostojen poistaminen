@@ -1,0 +1,22 @@
+/* Kirjoita C#-ohjelma joka poistaa kaikki .dat-päätteelliset tiedostot nykyisestä kansiosta ja tulostaa, kuinka monta tiedostoa poistettiin. */
+
+using System;
+using System.IO;
+
+class FileDelete
+{
+	static void Main()
+	{
+		
+		string path = ".";
+		string[] dirList = Directory.GetFiles(path, "*.dat");
+		
+		if (dirList.Length > 0)
+		{
+			foreach (string fileName in dirList)
+			File.Delete(fileName);
+			Console.WriteLine("3 tiedosto(a) poistettu.");
+		}
+	}
+}
+
