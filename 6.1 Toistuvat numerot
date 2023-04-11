@@ -1,0 +1,22 @@
+/* Kirjoita C#-ohjelma, joka ottaa vastaan yhden int-tyypin komentoriviargumentin. 
+Ohjelman tulee tulostaa argumentin verran rivejä esimerkkitulosteen näyttämällä tavalla. */
+
+using System;
+
+class tehtava61
+
+{
+
+static void Main(string[] args)
+{
+string tulostus = "";
+int i = int.Parse(args[0]);
+
+
+for (int a = 1; a <= i; a++)
+{
+tulostus = tulostus + a;
+Console.Write(tulostus + "\n\r");
+}
+
+}
