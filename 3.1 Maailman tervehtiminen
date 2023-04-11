@@ -1,0 +1,11 @@
+/* Kirjoita C#-ohjelma joka tulostaa näytölle "Hei, maailma!". */
+
+using System;
+
+class Hello
+{
+	static void Main()
+	{
+		Console.WriteLine("Hei, maailma!");
+	}
+}
