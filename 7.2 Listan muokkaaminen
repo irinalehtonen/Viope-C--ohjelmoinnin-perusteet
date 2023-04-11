@@ -1,0 +1,20 @@
+/* Sinulle on annettu merkkijono-tyyppinen List, joka sisältää seuraavat nimet:
+
+Torvalds, Musk, Gates, Buffet, Dorsey.
+
+ 
+
+Muokkaa listaa niin, että sen sisältämät arvot ovat:
+
+Jobs, Musk, McAfee, Buffet, Wozniak. 
+
+Osa koodista tehtävässä, tässä lisäys */
+
+
+		nimet.Clear();
+		
+		nimet.Add("Jobs");
+		nimet.Add("Musk");
+		nimet.Add("McAfee");
+		nimet.Add("Buffet");
+		nimet.Add("Wozniak");
