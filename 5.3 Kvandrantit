@@ -1,0 +1,29 @@
+/* Kirjoita ohjelma joka pyytää käyttäjältä pisteen xy-koordinaatistossa ja selvittää missä kvadrantissa koordinaattipiste sijaitsee, tai kertoo jos se sijaitsee origossa (0,0). */
+
+using System;  
+public class Exercise9  
+{  
+    public static void Main()
+{
+	int co1,co2;
+
+    Console.Write("Löydä xy-akseleilla olevan pisteen kvadrantti:\n");
+
+    Console.Write("X-koordinaatti: ");
+    co1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Y-koordinaatti: ");
+    co2 = Convert.ToInt32(Console.ReadLine());
+
+
+	if( co1 > 0 && co2 > 0)
+	  Console.Write("Koordinaattipiste ({0},{1}) on kvadrantissa 1.\n",co1,co2);
+	else if( co1 < 0 && co2 > 0)
+	  Console.Write("Koordinaattipiste ({0},{1}) on kvadrantissa 2.\n",co1,co2);
+	else if( co1 < 0 && co2 < 0)
+	  Console.Write("Koordinaattipiste ({0},{1}) on kvadrantissa 3.\n",co1,co2);
+	else if( co1 > 0 && co2 < 0)
+	  Console.Write("Koordinaattipiste ({0},{1}) on kvadrantissa 4.\n",co1,co2);
+	else if( co1 == 0 && co2 == 0)
+	  Console.Write("Koordinaattipiste ({0},{1}) on origossa.\n",co1,co2);
+}
+}
