@@ -1,0 +1,27 @@
+/* 
+Luo ohjelma, joka avaa olemassaolevan tiedoston, pyytää käyttäjältä sisältöä, ja lisää (append) annetun sisällön tiedostoon. */
+
+using System;
+using System.IO;
+
+class Filewriter
+{
+	static void Main()
+	{
+		string fileName = "foobar.txt";
+		string content = "Sisältö";
+		
+		Console.Write("Tiedosto johon lisätään: ");
+		fileName = Console.ReadLine();
+		
+		Console.Write("Syötä tiedostoon " + fileName + " lisättävä sisältö:\n");
+		content = Console.ReadLine();
+		
+		
+		using (StreamWriter sw = new StreamWriter(fileName, true))
+		{
+			sw.WriteLine(content);
+			sw.Close();
+		}
+	}
+}
