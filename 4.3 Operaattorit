@@ -1,0 +1,9 @@
+/* Esittele ja alusta muuttujat a, b ja c niin, että ohjelma tulostaa "Onnistui!". 
+Osa tehtävän koodista oli valmiina, tässä lisäys */
+
+
+	int a = 1;
+	int b = 2;
+	int c = 3;
+	
+		Console.WriteLine("Onnistui!");
