@@ -1,0 +1,15 @@
+/* Tehtävänäsi on kirjoittaa ohjelma, joka pyytää käyttäjää syöttämään hedelmän nimen ja tulostaa tämän jälkeen "Lempihedelmäsi on hedelmän nimi". */
+
+using System;
+
+class Lempihedelma
+{
+	static void Main()
+	{
+		string vastaus;
+		
+		Console.Write("Mikä on lempihedelmäsi? ");
+		vastaus = Console.ReadLine();
+		Console.WriteLine("Lempihedelmäsi on " + vastaus);
+	}
+}
