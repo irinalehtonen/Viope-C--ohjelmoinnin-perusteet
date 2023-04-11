@@ -1,0 +1,14 @@
+/* Kirjoita C#-ohjelma joka tulostaa ensimmäisen annetun komentoriviargumentin. 
+Voit olettaa, että argumentti on aina annettu, ja koostuu kirjaimista ja numeroista. */
+
+using System;
+
+class Komentorivi
+{
+	static void Main(String[] args)
+	{
+		Console.Write("Komentoriviargumentti oli: ");
+		Console.WriteLine(args[0]);
+	}
+}
+	
