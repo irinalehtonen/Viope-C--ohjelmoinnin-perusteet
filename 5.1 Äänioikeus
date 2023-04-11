@@ -1,0 +1,19 @@
+/* Kirjoita C#-ohjelma joka kysyy käyttäjän iän, sekä tulostaa onko hän oikeutettu äänestämään. Äänestämisen ikäraja on 18. */
+
+using System;
+
+class Aanestys
+{
+	static void Main()
+	{
+		int numero1;
+		
+		Console.Write("Syötä ikäsi, ole hyvä: \n");
+		numero1 = int.Parse(Console.ReadLine());
+		
+		if (numero1 >= 18)
+		{
+			Console.WriteLine("Voit äänestää!");
+		}
+	}
+}
