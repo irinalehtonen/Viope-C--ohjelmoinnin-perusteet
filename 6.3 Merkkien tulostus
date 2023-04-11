@@ -1,0 +1,9 @@
+/* Käytä foreach-lausetta tulostaaksesi taulukon "merkit" sisältö. 
+
+Osa koodista tehtävässä, tässä lisäys */
+
+
+		foreach(char merkki in merkit)
+		{
+			Console.Write(merkki);
+		}
