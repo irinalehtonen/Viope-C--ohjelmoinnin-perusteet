@@ -1,0 +1,39 @@
+/*Tehtävänäsi on kirjoittaa C#-ohjelma, joka tulostaa valikon ja pyytää käyttäjältä syötettä. 
+Sinun täytyy käyttää switch-lausetta. Valikon ja tulosteen tulee näyttää seuraavalta:
+
+Valitse:
+1) Vesi
+2) Mehu
+3) Limonadi
+4) Lopeta
+2
+Valitsit Mehu. */
+
+using System;
+
+class Valinta
+{
+	static void Main()
+	{
+		int input;
+		
+		Console.WriteLine("Valitse:\n1) Vesi\n2) Mehu\n3) Limonadi\n4) Lopeta");
+		input = Convert.ToInt32(Console.ReadLine());
+		
+		switch (input)
+		{
+			case 1:
+				Console.WriteLine("Valitsit Vesi.");
+				break;
+			case 2:
+				Console.WriteLine("Valitsit Mehu.");
+				break;
+			case 3:
+				Console.WriteLine("Valitsit Limonadi.");
+				break;
+			case 4:
+				Console.WriteLine("Lopetus!");
+				break;
+		}
+	}
+}
