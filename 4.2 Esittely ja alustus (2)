@@ -1,0 +1,13 @@
+/* Tehtävänäsi on esitellä allaolevat muuttujat ja alustaa ne sopivilla arvoilla.
+
+var1 = 8-bittinen etumerkillinen kokonaisluku
+var2 = 64-bittinen etumerkillinen kokonaisluku
+var3 = 16-bittinen etumerkitön kokonaisluku
+var4 = 64-bittinen double-precision liukuluku 
+
+Osa tehtävästä täytetty, tässä lisäys: */
+
+    sbyte var1 = 127;
+		long var2 = 15125465464521;
+		ushort var3 = 2;
+		double var4 = 2.0;
