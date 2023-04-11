@@ -1,0 +1,26 @@
+/* Kirjoita C#-ohjelma, joka pyytää käyttäjältä kokonaislukuja, kunnes niiden summa on vähintään 200. Sinun täytyy käyttää while-lausetta.*/
+
+using System;
+
+
+class Summaus
+{
+	static void Main()
+	{
+		int sum=0;
+		int input;
+
+		while(sum <=200)
+		{
+			Console.Write("Summa on nyt "+ sum + ". Syöte: ");
+			input = Convert.ToInt32(Console.ReadLine());
+			sum += input;
+				if (sum >= 200)
+				{
+				Console.WriteLine("Saavutettiin 200. Summa oli " + sum + ".");
+				}
+
+		}
+
+	}
+}
